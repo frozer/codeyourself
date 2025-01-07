@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/main.02e98488.js","mappings":"mBACAA,QAAQC,IAAI,gB","sources":["index.js"],"sourcesContent":["import './index.css';\r\nconsole.log('Hello, world!');"],"names":["console","log"],"sourceRoot":""}
