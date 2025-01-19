@@ -1,2 +1,39 @@
-body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;margin:0}code{font-family:source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  margin: 0
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: minmax(400px, 25%) 1fr;
+}
+
+.code-explorer {
+  background-color: #2d2d2d;
+}
+
+.code-explorer h2,a {
+  color: rgb(255, 213, 0);
+}
+
+.code-explorer h2 {
+  padding-left: 1rem;
+}
+
+
+.code {
+  overflow: scroll;
+  text-overflow: ellipsis;
+  white-space: pre-wrap;
+  padding-left: 1rem;
+  padding-top: 0.5em;
+  background-color: rgb(240,240,240);
+}
+
 /*# sourceMappingURL=main.e6c13ad2.css.map*/

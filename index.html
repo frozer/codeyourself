@@ -1,1 +1,46 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="manifest" href="/manifest.json"/><script src="/p5.min.js"></script><title>Code Yourself App</title><script defer="defer" src="/static/js/main.02e98488.js"></script><link href="/static/css/main.e6c13ad2.css" rel="stylesheet"></head><body><main></main><script src="/george.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="manifest" href="/manifest.json" />
+  <script src="p5.min.js"></script>
+  <title>Code Yourself App</title>
+  <script defer="defer" src="static/js/main.02e98488.js"></script>
+  <link href="static/css/main.e6c13ad2.css" rel="stylesheet">
+
+  <script type="text/javascript">
+    
+    fetch('https://api.github.com/repos/frozer/codeyourself/contents/george.js', {
+      headers: {
+        'Accept': 'application/vnd.github.raw+json'
+      }
+    })
+    .then(response => response.text())
+    .then(data => {
+      const codeStorage = document.getElementById('code-storage');
+      codeStorage.innerText = data;
+    });
+  </script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="code-explorer">
+      <h2>Explore this code on <a href="https://github.com/frozer/codeyourself/blob/main/george.js">Github</a>!</h2>
+      <pre class="code">
+        <code id="code-storage">
+        </code>
+      </pre>
+    </div>
+    <div class="demo">
+      <main></main>
+    </div>
+  </div>
+  
+  <script src="george.js"></script>
+   
+</body>
+
+</html>
